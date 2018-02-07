@@ -9,10 +9,10 @@ class main {
     private $menu;
     public function __construct(string $name){
         $menu->setName("-=ShatteredAtom Network=-");
-        $this->menu = InvMenu::create(InvMenu::TYPE_CHEST)
-            ->readonly()
-            ->setName($name)
-            ->setListener([$this, "onServerSelectorTransaction"])
+        $this->menu = InvMenu::create(InvMenu::TYPE_CHEST);
+            ->readonly();
+            ->setName($name);
+            ->setListener([$this, "onServerSelectorTransaction"]);
             ->onInventoryClose(function(Player $player) : void{
                 $player->sendMessage(TextFormat::GREEN."You are being transferred...");
             });
