@@ -1,5 +1,5 @@
 <?php
-namespace ServerTransgerGui;
+namespace stg;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
 use pocketmine\Player;
