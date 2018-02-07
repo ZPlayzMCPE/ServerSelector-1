@@ -10,10 +10,10 @@ class main {
     public function __construct(string $name){
         $menu->setName("-=ShatteredAtom Network=-");
         $this->menu = InvMenu::create(InvMenu::TYPE_CHEST);
-            ->readonly();
-            ->setName($name);
-            ->setListener([$this, "onServerSelectorTransaction"]);
-            ->onInventoryClose(function(Player $player) : void{
+        $this->menu->readonly();
+        $this->menu->setName($name);
+        $this->menu->setListener([$this, "onServerSelectorTransaction"]);
+        $this->menu->onInventoryClose(function(Player $player) : void{
                 $player->sendMessage(TextFormat::GREEN."You are being transferred...");
             });
     }
