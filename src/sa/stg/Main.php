@@ -4,8 +4,8 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
 use pocketmine\Player;
 use muqsit\invmenu\InvMenu;
-class main {
-    /** @var InvMenu **/
+class Main{
+    @var InvMenu
     private $menu;
     public function __construct(string $name){
         $menu->setName("-=ShatteredAtom Network=-");
@@ -34,6 +34,7 @@ class main {
 $selector = new ("Server Selector");
 $selector->addServerToList(Item::get(Item::DIAMOND_SWORD), "mysticraid.tk", 19132);
 $selector->addServerToList(Item::get(Item::IRON), "nitronetwork.ddns.net", 19132);
-/** @var Player $player */
+@var Player 
+private $player;
 $selector->sendTo($player);
 }
