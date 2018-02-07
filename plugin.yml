@@ -1,0 +1,4 @@
+name: ServerTranseferGUI
+main: sa\stg\main
+api: 3.0.0-ALPHA10, 3.0.0-ALPHA11
+version: 0.0.1
