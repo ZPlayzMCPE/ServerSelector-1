@@ -4,7 +4,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
 use pocketmine\Player;
 use muqsit\invmenu\InvMenu;
-class Main{
+class Main extends PluginBase{
     @var InvMenu
     private $menu;
     public function __construct(string $name){
