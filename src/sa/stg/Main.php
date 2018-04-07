@@ -1,5 +1,5 @@
 <?php
-namespace stg;
+namespace sa\stg;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
 use pocketmine\Player;
