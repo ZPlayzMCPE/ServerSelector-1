@@ -30,10 +30,11 @@ class Main extends PluginBase{
     public function sendTo(Player $player) : void{
         $this->menu->send($player);
     }
+}
 $selector = new selector("Server Selector");
 $selector->addServerToList(Item::get(Item::DIAMOND_SWORD), "mysticraid.tk", 19132);
 $selector->addServerToList(Item::get(Item::IRON), "nitronetwork.ddns.net", 19132);
+
 /*@var Player*/ 
-private $player;
+$player = $player->getName();
 $selector->sendTo($player);
-}
